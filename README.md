@@ -46,7 +46,7 @@ Working on this project was a great learning experience, and I gained a deeper u
 ```
 
 2. **Custom Fonts with @font-face**
-   This project introduced me to the process of using custom font families installed on the computer or included in the project folder, instead of relying solely on web font services like Google Fonts. By using @font-face, I was able to include and style custom fonts in the project.
+   This project introduced me to the process of using custom font families installed on the computer or included in the project folder, instead of relying solely on web font services like Google Fonts. By using `@font-face`, I was able to include and style custom fonts in the project.
 
 ```css
 @font-face {
@@ -58,7 +58,7 @@ Working on this project was a great learning experience, and I gained a deeper u
 ```
 
 3. **Responsive Typography Without Media Queries**
-   One of the interesting challenges I faced was making the font size responsive based on the device's width without using media queries. I achieved this by using the clamp() function, which allows you to set a dynamic font size within a defined range.
+   One of the interesting challenges I faced was making the font size responsive based on the device's width without using media queries. I achieved this by using the `clamp()` function, which allows you to set a dynamic font size within a defined range.
 
 ```css
 font-size: clamp(12px, 3vw, 14px);
