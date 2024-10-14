@@ -14,8 +14,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -50,30 +48,30 @@ Working on this project was a great learning experience, and I gained a deeper u
 2. **Custom Fonts with @font-face**
    This project introduced me to the process of using custom font families installed on the computer or included in the project folder, instead of relying solely on web font services like Google Fonts. By using @font-face, I was able to include and style custom fonts in the project.
 
-```css
-@font-face {
-  font-family: "figtree";
-  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("truetype");
-  font-weight: 100 900;
-  font-style: italic;
-}
-```
+   ```css
+   @font-face {
+     font-family: "figtree";
+     src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("truetype");
+     font-weight: 100 900;
+     font-style: italic;
+   }
+   ```
 
 3. **Responsive Typography Without Media Queries**
    One of the interesting challenges I faced was making the font size responsive based on the device's width without using media queries. I achieved this by using the clamp() function, which allows you to set a dynamic font size within a defined range.
 
-```css
-font-size: clamp(12px, 3vw, 14px);
-```
+   ```css
+   font-size: clamp(12px, 3vw, 14px);
+   ```
 
 4. **Simplified GitHub Pages Deployment**
    I also discovered an easier and more efficient way to deploy projects using GitHub Pages. Instead of the lengthy process I was following before, I learned to:
 
 - Go to the Settings of the repository.
 - Scroll down to the GitHub Pages section.
-  - Select the master (or main) branch as the source for GitHub Pages.
-    After that, you can access your project at:
-    https://your-username.github.io/project/
+- Select the master (or main) branch as the source for GitHub Pages.
+  After that, you can access your project at:
+  https://your-username.github.io/project/
 
 ### Continued development
 
