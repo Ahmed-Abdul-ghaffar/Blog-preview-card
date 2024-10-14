@@ -18,12 +18,12 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-[](design/Screenshot.jpeg)
+![](design/Screenshot.jpeg)
 
 ### Links
 
 - Solution URL: [https://github.com/Ahmed-Abdul-ghaffar/Blog-preview-card](https://github.com/Ahmed-Abdul-ghaffar/Blog-preview-card)
-- Live Site URL: [Add live site URL here](https://ahmed-abdul-ghaffar.github.io/Blog-preview-card/)
+- Live Site URL: [https://ahmed-abdul-ghaffar.github.io/Blog-preview-card/](https://ahmed-abdul-ghaffar.github.io/Blog-preview-card/)
 
 ## My process
 
@@ -41,31 +41,31 @@ Working on this project was a great learning experience, and I gained a deeper u
 1. **Focusable Elements and Accessibility**  
    I learned that various elements, such as buttons, links, and text areas, can receive focus when navigating a page using the `Tab` key. This triggers the styles applied in the `:focus` pseudo-class. But what about non-focusable elements? I discovered that you can make any element focusable by adding the `tabindex="0"` attribute in the HTML, allowing it to receive focus and display `:focus` styles.
 
-   ```html
-   <h1 class="card-title" tabindex="0">HTML & CSS Foundations</h1>
-   ```
+```html
+<h1 class="card-title" tabindex="0">HTML & CSS Foundations</h1>
+```
 
 2. **Custom Fonts with @font-face**
    This project introduced me to the process of using custom font families installed on the computer or included in the project folder, instead of relying solely on web font services like Google Fonts. By using @font-face, I was able to include and style custom fonts in the project.
 
-   ```css
-   @font-face {
-     font-family: "figtree";
-     src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("truetype");
-     font-weight: 100 900;
-     font-style: italic;
-   }
-   ```
+```css
+@font-face {
+  font-family: "figtree";
+  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+```
 
 3. **Responsive Typography Without Media Queries**
    One of the interesting challenges I faced was making the font size responsive based on the device's width without using media queries. I achieved this by using the clamp() function, which allows you to set a dynamic font size within a defined range.
 
-   ```css
-   font-size: clamp(12px, 3vw, 14px);
-   ```
+```css
+font-size: clamp(12px, 3vw, 14px);
+```
 
 4. **Simplified GitHub Pages Deployment**
-   I also discovered an easier and more efficient way to deploy projects using GitHub Pages. Instead of the lengthy process I was following before, I learned to:
+   I also discovered an easier and more efficient way to deploy projects using GitHub Pages. Instead of the process I was following before, to do that:
 
 - Go to the Settings of the repository.
 - Scroll down to the GitHub Pages section.
