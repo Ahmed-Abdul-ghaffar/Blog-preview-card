@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "figtree";
+  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "figtree";
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format(truetype);
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "figtree";
+  src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format(truetype);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "figtree";
+  src: url(assets/fonts/static/Figtree-SemiBold.ttf) format(truetype);
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: "figtree", sans-serif;
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 376px;
+  margin: auto;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: 1px solid #000;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.card-img {
+  border-radius: 17px;
+  margin: 20px 20px 20px 20px;
+}
+
+.card-publish-date::before {
+  content: "Learning";
+  background-color: hsl(47, 88%, 63%);
+  display: block;
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 5px;
+  margin-bottom: 13px;
+  font-weight: 800;
+  font-size: clamp(14.5px, 3vw, 16px);
+}
+
+.card-publish-date {
+  margin-left: 20px;
+  color: hsl(0, 0%, 7%);
+  font-size: clamp(12px, 3vw, 14px);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  margin-left: 20px;
+  font-size: clamp(20px, 3vw, 23px);
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+  margin-bottom: 15px;
+}
+
+.card-title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.card-title-description {
+  margin-left: 20px;
+  font-size: clamp(13.5px, 3vw, 16px);
+  color: hsl(0, 0%, 42%);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  position: relative;
+}
+
+.card-author-img {
+  margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 31px;
+}
+
+.card-author-name {
+  display: inline-block;
+  font-weight: 800;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 6.5px;
+  margin-left: 10px;
+  font-size: clamp(13px, 3vw, 15px);
+}
+
+/* mobile design */
+@media (max-width: 375px) {
+  .card-img {
+    content: url(assets/images/mobile-card-img.png);
+  }
+
+  .container {
+    width: 318px;
+  }
+  .card-author-name {
+    top: 8px;
+  }
+}
